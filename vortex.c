@@ -581,6 +581,8 @@ const char *get_mime_type(const char *filename) {
         return "application\\pdf";
     else if (strcmp(lower_ext, ".docx") == 0)
         return "application\\vnd.openxmlformats-officedocument.wordprocessingml.document";
+    else if (strcmp(lower_ext, ".doc") == 0)
+        return "application\\msword";
     else if (strcmp(lower_ext, ".xlsx") == 0)
         return "application\\vnd.openxmlformats-officedocument.spreadsheetml.sheet";
     else if (strcmp(lower_ext, ".xlsm") == 0)
@@ -605,6 +607,8 @@ const char *get_mime_type(const char *filename) {
         return "text\\plain";
     else if (strcmp(lower_ext, ".c") == 0)
         return "text\\plain";
+    else if (strcmp(lower_ext, ".cs") == 0)
+        return "text\\plain";
     else if (strcmp(lower_ext, ".css") == 0)
         return "text\\plain";
     else if (strcmp(lower_ext, ".txt") == 0)
@@ -623,6 +627,8 @@ const char *get_mime_type(const char *filename) {
         return "text\\plain";
     else if (strcmp(lower_ext, ".md") == 0)
         return "text\\markdown";
+    else if (strcmp(lower_ext, ".otf") == 0)
+        return "font\\otf";
     else if (strcmp(lower_ext, ".msi") == 0)
         return "application\\x-ms-installer";
     else if (strcmp(lower_ext, ".exe") == 0)
