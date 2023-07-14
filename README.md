@@ -18,5 +18,5 @@ gcc vortex-gui.c -o vortex-gui `pkg-config --cflags --libs gtk+-3.0`
 ```
 ### CLI
 ```
-./vortex *ingest directory* *Vortexed directory*
+./vortex ingest directory Vortexed directory
 ```
