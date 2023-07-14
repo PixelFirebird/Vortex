@@ -4,14 +4,19 @@ An alternate file organisation system.
 ## Compile Instructions
 ### Main Program
 ```
-gcc -g main.c -o test -lcrypto -lmagic
+gcc -g vortex.c -o vortex -lcrypto -lmagic
 ```
 ### GUI
 ```
-gcc gui.c -o gui `pkg-config --cflags --libs gtk+-3.0`
+gcc vortex-gui.c -o vortex-gui `pkg-config --cflags --libs gtk+-3.0`
 ```
 
 ## Run Instructions
+### GUI
 ```
-./gui
+./vortex-gui
+```
+### CLI
+```
+./vortex _ingest directory_ _Vortexed directory_
 ```
